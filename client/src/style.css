@@ -1,0 +1,320 @@
+html,body {
+   display: flex;
+   flex-direction: column;
+   flex-grow: 1;
+   min-height: 100vh;
+   background-color: #212529 !important;
+   color: white !important;
+}
+
+.modal-header, .modal-body, .modal-footer, input, select {
+   background-color: #212529 !important;
+   color: white !important;
+}
+
+input::placeholder {
+   color: rgb(199, 199, 199) !important;
+}
+
+.modal-header {
+   border-bottom: 1px solid rgb(83, 83, 83) !important;
+}
+
+.modal-footer {
+   border-top: 1px solid rgb(90, 90, 90) !important;
+}
+
+input, select {
+   border: 1px solid rgb(100, 100, 100) !important;
+}
+
+.industryFundsDiv a {
+   color: rgb(0, 174, 255) !important;
+}
+
+.container {
+   margin-bottom: 40px;
+}
+
+.jumbotron {
+   text-align: center;
+   color: white;
+   background: url('./images/books-banner.png');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   text-shadow: 
+     1px  1px 0 #000,
+    -1px  1px 0 #000,
+     1px -1px 0 #000,
+    -1px -1px 0 #000,
+     0px  1px 0 #000,
+     0px -1px 0 #000,
+    -1px  0px 0 #000,
+     1px  0px 0 #000,
+     2px  2px 0 #000,
+    -2px  2px 0 #000,
+     2px -2px 0 #000,
+    -2px -2px 0 #000,
+     0px  2px 0 #000,
+     0px -2px 0 #000,
+    -2px  0px 0 #000,
+     2px  0px 0 #000,
+     1px  2px 0 #000,
+    -1px  2px 0 #000,
+     1px -2px 0 #000,
+    -1px -2px 0 #000,
+     2px  1px 0 #000,
+    -2px  1px 0 #000,
+     2px -1px 0 #000,
+    -2px -1px 0 #000;
+}
+
+
+
+.view-btn {
+   margin-right: 15px;
+}
+
+
+
+.nav-link {
+   cursor: pointer;
+}
+
+#logged-in-msg {
+   cursor: auto;
+}
+
+#email-error-message {
+   visibility: hidden;
+   color: red !important;
+}
+
+.navbar {
+   display: flex;
+}
+
+.navbar-toggler {
+   margin-left: auto;
+}
+
+/* rep info page */
+
+.generalInfoDiv {
+   margin-top: 35px;
+   text-align: center;
+}
+
+.headshotHolder {
+   height: 175px;
+   width: 175px;
+   border-radius: 50%;
+   overflow: hidden;
+}
+
+.generalInfoYear {
+   font-style: italic;
+   color: rgb(0, 97, 189);
+}
+
+/* =========================================== Source of Funds =========================================== */
+
+.sourceOfFundsDiv {
+   margin-top: 35px;
+   overflow: hidden;
+}
+
+.contributionsTable td:first-child {
+   position: relative;
+}
+
+.contributionsTable td:first-child::before {
+   content: "";
+   display: inline-block;
+   height: 20px;
+   left: 5px;
+   top: 17px;
+   position: absolute;
+   width: 20px;
+}
+
+.contributionsTable tr:nth-child(1) td:first-child::before {
+   background-color: rgb(0, 8, 51);
+}
+.contributionsTable tr:nth-child(2) td:first-child::before {
+   background-color: rgb(0, 41, 117);
+}
+.contributionsTable tr:nth-child(3) td:first-child::before {
+   background-color: rgb(0, 86, 199);
+}
+.contributionsTable tr:nth-child(4) td:first-child::before {
+   background-color: rgb(0, 107, 207);
+}
+.contributionsTable tr:nth-child(5) td:first-child::before {
+   background-color: rgb(0, 153, 255);
+}
+
+.contributionsTable td, .industriesTable td {
+   border-bottom: 1px solid rgb(87, 87, 87);
+   border-top: 1px solid rgb(87, 87, 87);
+   padding: 15px 30px 15px 30px;
+}
+
+.contributionsTable td:not(:first-child), .industriesTable td {
+   padding: 15px 30px 15px 0px;
+}
+
+/* funds graph */
+
+.fundsGraph {
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.fundsGraph td {
+   height: 50px;
+}
+
+.fundsGraph td:nth-child(1) {
+   background-color: rgb(0, 8, 51);
+}
+.fundsGraph td:nth-child(2) {
+   background-color: rgb(0, 41, 117);
+}
+.fundsGraph td:nth-child(3) {
+   background-color: rgb(0, 86, 199);
+}
+.fundsGraph td:nth-child(4) {
+   background-color: rgb(0, 107, 207);
+}
+.fundsGraph td:nth-child(5) {
+   background-color: rgb(0, 153, 255);
+}
+
+/* =========================================== Industry Funds =========================================== */
+
+.industryFundsDiv {
+   margin-top: 35px;
+   overflow-x: auto;
+}
+
+.div-header {
+   margin-bottom: 20px;
+   background: #648880;
+   background: linear-gradient(to right, #004985, #64888000 100%, #293f5000);
+   color: white;
+   padding: 5px;
+   width: 100%;
+   /* text-align: center; */
+}
+
+.industry-btn {
+   text-align: start !important;
+   padding: 5px !important;
+}
+
+/* rep rating div */
+
+.rep-rating-div {
+   font-size: 30px;
+   text-align: center;
+}
+
+.rep-rating-div .card-header {
+   background-color: #000e1a;
+}
+
+.rep-rating-div .card-body {
+   background-color: #001627;
+}
+
+.rep-rating-div .card {
+   border: 1px solid rgb(32, 32, 32) !important;
+}
+
+#upvote-rep, #downvote-rep {
+   cursor: pointer;
+}
+
+
+/* =========================================== Comments =========================================== */
+
+#comment-component-div {
+   margin-top: 35px;
+}
+
+#add-comment-form {
+   width: 100%;
+   margin-bottom: 10px;
+}
+
+#add-comment {
+   width: 100%;
+}
+
+#add-comment-btn-span button:not(:last-child) {
+   margin-right: 10px;
+}
+
+.most-recent-comments-card:not(:last-child), .top-rated-comments-card:not(:last-child) {
+   margin-bottom: 20px;
+}
+
+#comment-component-div textarea {
+   background-color: rgb(24, 26, 27) !important;
+   border-color: rgb(54, 63, 72) !important;
+   color: white !important;
+}
+
+#comment-component-div .card {
+   border: 1px solid rgb(32, 32, 32) !important;
+}
+
+#comment-component-div .card-header {
+   background-color: #000e1a;
+}
+
+#comment-component-div .card-body {
+   background-color: #001627;
+}
+
+.upvote-comment, .downvote-comment {
+   cursor: pointer;
+}
+
+.comment-date-text {
+   display: block;
+   width: 100%;
+   text-align: right;
+   font-size: 14px;
+   color: rgb(165, 165, 165);
+}
+
+
+/* ========================================== Legislation ========================================== */
+
+#legislationDiv {
+   margin-top: 35px;
+}
+
+.legislation-row:not(:last-child) {
+   border-bottom: 1px solid rgb(87, 87, 87);
+}
+
+#legislationTable td:not(:last-child), #legislationTable th:not(:last-child) {
+   padding-right: 17px;
+}
+
+#legislationTable td {
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+.legislation-date-td {
+   min-width: 100px;
+}
+
+.legislation-question-td {
+   min-width: 100px;
+}
